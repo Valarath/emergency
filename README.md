@@ -38,17 +38,12 @@ Please bear in mind that docker-compose use several application and each applica
 Example of requests (application runs on localhost:8080):
 - Incident log
 
-POST /incident HTTP/1.1
-
-Content-Type: application/json
-
-Accept: */*
-
-Host: localhost:8080
-
-Accept-Encoding: gzip, deflate, br
-
-Content-Length: 124
+POST /incident HTTP/1.1<br/>
+Content-Type: application/json<br/>
+Accept: */*<br/>
+Host: localhost:8080<br/>
+Accept-Encoding: gzip, deflate, br<br/>
+Content-Length: 124<br/>
  
 {
 "type":"MEDICAL",
@@ -61,7 +56,7 @@ Content-Length: 124
 
 - Incident search
 
-GET /incident?pageNumber=0&filter.location.latitude=0.0&filter.location.longitude=0.0&filter.distance=100000&filter.from=2024-01-01T00:16:52.024Z&filter.to=2025-01-01T00:16:52.024Z HTTP/1.1
-Accept: */*
-Host: localhost:8080
-Accept-Encoding: gzip, deflate, br
+GET /incident?pageNumber=0&filter.location.latitude=0.0&filter.location.longitude=0.0&filter.distance=100000&filter.from=2024-01-01T00:16:52.024Z&filter.to=2025-01-01T00:16:52.024Z HTTP/1.1<br/>
+Accept: */*<br/>
+Host: localhost:8080<br/>
+Accept-Encoding: gzip, deflate, br<br/>
