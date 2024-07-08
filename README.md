@@ -39,10 +39,15 @@ Example of requests (application runs on localhost:8080):
 - Incident log
 
 POST /incident HTTP/1.1
+
 Content-Type: application/json
+
 Accept: */*
+
 Host: localhost:8080
+
 Accept-Encoding: gzip, deflate, br
+
 Content-Length: 124
  
 {
