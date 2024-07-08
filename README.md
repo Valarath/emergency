@@ -43,7 +43,6 @@ Content-Type: application/json
 Accept: */*
 Host: localhost:8080
 Accept-Encoding: gzip, deflate, br
-Connection: keep-alive
 Content-Length: 124
  
 {
@@ -61,4 +60,3 @@ GET /incident?pageNumber=0&filter.location.latitude=0.0&filter.location.longitud
 Accept: */*
 Host: localhost:8080
 Accept-Encoding: gzip, deflate, br
-Connection: keep-alive
