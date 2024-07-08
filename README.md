@@ -29,7 +29,7 @@ Guide to run
 - create docker image via tool or commandline (docker build --tag emergency .). Expected name of image is emergency, this part is important for docker-compose
 - run docker-compose file via tool or commandline (docker-compose up)
 
-Please bear in mind that docker-compose use several application and each application requires usage of ports:
+Please bear in mind that docker-compose use several application and each application requires usage of port/s:
 - 8080 - Spring boot application
 - 5432 - Postgres database
 - 8888 - Pgadmin
