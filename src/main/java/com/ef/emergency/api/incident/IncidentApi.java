@@ -3,6 +3,7 @@ package com.ef.emergency.api.incident;
 import com.ef.emergency.dto.Incident;
 import com.ef.emergency.service.IncidentService;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,6 +19,7 @@ public class IncidentApi {
     }
 
     @PostMapping()
+    @ResponseStatus(HttpStatus.CREATED)
     public Incident log(@Valid @RequestBody LogIncidentRequest request){
         return incidentService.log(request.location(), request.type(), request.severity());
     }
